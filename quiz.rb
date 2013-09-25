@@ -13,11 +13,13 @@ end
 # Question 3. Create a method called `is_prime`, which calculates if an input parameter `x` is prime, and return true or false. Just brute force this and don't try to be too smart about it. 
 def is_prime(x)
   num = 2 
-  while num <= x 
+  while num < x 
     return false if x % num == 0
     num += 1
   end 
   true
 end
 
+puts is_prime(37)
+puts is_prime(42)
 
